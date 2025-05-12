@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/TejasPatil75/flask-ci-demo.git'
-            }
-        }
-
         stage('Setup Environment') {
             steps {
                 bat """
